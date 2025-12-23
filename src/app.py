@@ -1,14 +1,14 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Smart Expense Tracker",
+    page_title="Finexa Ledger",
     layout="centered"
 )
 
-st.title("💰 Smart Expense Tracker")
+st.title("Finexa Ledger")
 
 st.markdown("""
-Welcome to the **Smart Expense Tracker**.
+Welcome to the **Finexa Ledger**.
 
 👉 Use the **sidebar** to navigate between pages.  
 👉 **Login is required** to access app features.
