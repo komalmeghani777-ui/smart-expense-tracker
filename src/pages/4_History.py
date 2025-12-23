@@ -1,6 +1,7 @@
 import streamlit as st
 if "user_id" not in st.session_state:
-    st.switch_page("pages/0_Login.py")
+    st.switch_page("0_Login.py")
+
 from db import list_expenses, update_expense, delete_expense
 
 st.title("📘 Expense History")

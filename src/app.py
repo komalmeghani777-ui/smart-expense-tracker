@@ -16,7 +16,8 @@ with st.sidebar:
 
     if st.button("🚪 Logout"):
         st.session_state.clear()
-        st.switch_page("pages/0_Login.py")
+        st.switch_page("0_Login.py")
+
 
 st.title("Finexa Ledger by IoTrenetics Solutions Pvt. Ltd.")
 st.write("Use the sidebar to navigate through the app.")
