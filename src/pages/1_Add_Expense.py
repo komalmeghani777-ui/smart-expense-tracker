@@ -1,6 +1,10 @@
 import streamlit as st
+
 if "user_id" not in st.session_state:
+    st.info("Please login to continue.")
     st.switch_page("0_Login.py")
+    st.stop()
+
 
 from db import add_expense
 

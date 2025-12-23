@@ -1,25 +1,21 @@
-# force redeploy
 import streamlit as st
 
-# 🔐 If not logged in, go to Login page
-if "user_id" not in st.session_state:
-    st.switch_page("pages/0_Login.py")
-
 st.set_page_config(
-    page_title="Smart Expense Tracker",
+    page_title="Finexa Ledger",
     layout="centered"
 )
 
-# 📌 Sidebar
-with st.sidebar:
-    st.markdown("### 👤 Account")
-    st.write(f"Logged in as **{st.session_state.get('username')}**")
+st.title("Finexa Ledger")
 
-    if st.button("🚪 Logout"):
-        st.session_state.clear()
-        st.switch_page("0_Login.py")
+st.markdown(
+    """
+Welcome to the **Finexa Ledger**.
 
+👉 Use the **sidebar** to navigate between pages.  
+👉 **Login is required** to access app features.  
 
-st.title("Finexa Ledger by IoTrenetics Solutions Pvt. Ltd.")
-st.write("Use the sidebar to navigate through the app.")
+If you are not logged in, you will be redirected to the Login page automatically.
+"""
+)
+
 
